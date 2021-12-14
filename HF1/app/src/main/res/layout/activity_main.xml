@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/osszead"
+        android:layout_width="115dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="64dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/kivon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szam2" />
+
+    <Button
+        android:id="@+id/kivon"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="78dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szam2" />
+
+    <Button
+        android:id="@+id/szorzas"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/osszead" />
+
+    <Button
+        android:id="@+id/osztas"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="96dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/eredmeny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kivon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="172dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="122dp"
+        android:text="Szamologep"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eredmeny"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="116dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="128dp"
+        android:text="Eredmeny"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eredmeny"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/szam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/szam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szam1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
